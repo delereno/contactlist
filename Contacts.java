@@ -1,14 +1,17 @@
 
 /**
- * Write a description of class Contacts here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Contact support class
+ * Allows a contact to store user info
+ * 
+ * @Del Huang (your name)
+ * @1/06/21 (a version number or a date)
  */
 public class Contacts
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    // instance variables 
+    private String name;
+    private int phonenum;
+    private String photoId;
 
     /**
      * Constructor for objects of class Contacts

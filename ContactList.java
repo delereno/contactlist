@@ -7,10 +7,9 @@ import java.awt.Color;
  * Stores a list of user contacts
  * Allows user to add, view and hide information
  * includes name, phone number and id image
- * jesus this is a lil messy right now
- *
- * @Del Huang (your name)
- * @31/5/21 (a version number or a date)
+ * this spell mainly wrote prog out on paper, will type up next spell
+ * @Del Huang 
+ * @1/6/21 
  */
 public class ContactList
 {
@@ -38,10 +37,7 @@ public class ContactList
         }
     }
     /**
-     * Mr Ny
-     * If you're looking over this after submission,
-     * this is just a quick test on how i want formatting, nothing final yet
-     * like a visual plan kinda
+     *
      */
     public void test()
     {
