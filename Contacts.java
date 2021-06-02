@@ -1,3 +1,7 @@
+import ecs100.*;
+import java.util.*;
+import java.io.*;
+import java.awt.Color;
 
 /**
  * Contact support class
@@ -9,28 +13,55 @@
 public class Contacts
 {
     // instance variables 
+    private int id;
     private String name;
-    private int phonenum;
+    private int phoneNum;
     private String photoId;
 
+    private double xSet, ySet = 50;
+    final double WIDTH = 164;
+    final double HEIGHT = 200;
     /**
      * Constructor for objects of class Contacts
      */
-    public Contacts()
+    public Contacts(int id, String nm, int num, String img)
     {
         // initialise instance variables
-        x = 0;
+        this.id = id;
+        this.name = nm;
+        this.phoneNum = num;
+        this.photoId = img;
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * Getter method for num id
+     * 
+     * @return id int
      */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public int getId() {
+        return this.id;
+    }
+    /**
+     * Getter method for num id
+     * 
+     * @return id int
+     */
+    public String getName() {
+        return this.name;
+    }
+    /**
+     * Getter method for num id
+     * 
+     * @return id int
+     */
+    public int getPhoneNum() {
+        return this.phoneNum;
+    }
+    
+    /**
+     * Displays the id image on the GUI
+     */
+    public void displayBook() {
+        UI.drawImage(this.photoId, xSet, ySet, WIDTH, HEIGHT);
     }
 }
